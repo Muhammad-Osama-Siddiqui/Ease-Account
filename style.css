@@ -1,0 +1,40 @@
+#remov{
+    background :none;
+    border:none;
+}
+
+/*#abc,#abcd{
+    text-align: center;
+}
+*/
+
+.right{
+    text-align: right;
+}
+/*.hide td{
+   display :none;
+}*/
+.center{text-align:center;}
+.output{
+    width: 450px;
+}
+.output table{
+    width: 450px;
+ 
+}
+.output table tr .size_p {
+    width: 260px;
+    text-align: center;
+}
+.output table tr .size_pr {
+    width: 5px;
+    text-align: center;
+}
+.output table tr .size_date {
+    width: 125px;
+    text-align: center;
+}
+.output table tr .size_dr,.output table tr .size_cr {
+    width: 60px;
+    text-align: center;
+}
