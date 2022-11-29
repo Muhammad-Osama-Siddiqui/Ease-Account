@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ease Account</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+     <center>
+         <form action="#" name="myform">
+				<table border="1px">
+				    <!-- Input Data to calculate -->
+		<tr>
+	      <th width="194px">M/S</th>
+<td><b><input type="text" name="me" id="M/S"></b></td>
+	  </tr>
+	  <tr>
+	      <th>Date</th>
+       <td> <input type="date" name="dat" id="date" style="width:97%;"> </td>
+	  </tr></table></form>
+	<form action="#" name="myForm"><table border="1px"> 
+		<tr>
+        <th colspan="2">Add Entry</th>
+   </tr>
+    <tr>
+    <td> <input type="text" name="dr" id="entry1" placeholder="Dr. Entry"> </td>
+    <td rowspan="2"> <input type="number" name="amount" id="amount" placeholder="Rs." style="height:50px;"> </td>
+      </tr>
+   <tr>
+       <td> <input type="text" name="cr" id="entry2" placeholder="Cr. Entry"> </td>
+   </tr>
+   <tr id="btna">
+<td><input type="button" name="button"  value="Entry" onclick="addEntry();"></td>
+<td id="s"><input type="button" value="Change Owner" onClick="res()"></td>
+   </tr></table>
+   </form>
+</center>
+
+<!-- For calculate -->
+<div class="output">
+<table id="result" border="1px">
+<tr>
+	<th colspan="4" style="text-align: center;"><b>M/S</b>&nbsp<b id="ms"></b></th>
+</tr>
+<tr>
+	<th colspan="4" style="text-align: center;"><b>General Journal</b></th>
+</tr>
+<tr>
+	<td>Date</td>
+	<td>Particular</td>
+	<td>Dr.</td>
+	<td>Cr.</td>
+</tr>
+<tr>
+    <td id="yer"></td>
+    <td></td>
+	<td></td>
+	<td></td>
+</tr>
+</table>					
+</div>
+    <script src="./app.js"></script>
+</body>
+</html>
