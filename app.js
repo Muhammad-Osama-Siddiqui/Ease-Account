@@ -1,19 +1,12 @@
 // this version add classes, improve functionality and bug fixes
-// this is new
 class Account {
     constructor (mS,entryDr,entryCr, positive, negative){
-    //input data
+//input data
   this.mS = document.getElementById("M/S");
   this.entryDr = document.getElementById("entry1");
- // entryDr = entryDr.toLowerCase().replace(" ", "");
   this.entryCr = document.getElementById("entry2");
-  // entryCr=	entryCr.toLowerCase().replace(" ", "");
-  //this.amount = document.getElementById("amount");
-    //amount = +amount;
- this.positive = [];
- this.negative = [];
     }
-    //Delete Row
+//Delete Row
  del(entry){
 const i = entry.parentNode.parentNode.rowIndex;
   document.getElementById("result").deleteRow(i);
